@@ -1,0 +1,219 @@
+html {
+  font-family: sans-serif;
+}
+
+
+body {
+  margin: 0; }
+
+
+header{
+  display: block; }
+
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+@font-face {
+    font-family: dancing-script-ot; /* Гарнитура шрифта */
+    src: url(fonts/dancing-script-ot.ttf); /* Путь к файлу со шрифтом */
+   } 
+  
+  
+/************************************************/  
+/* Header styles */
+/************************************************/
+.header {
+	height: 455px;
+	position: relative;
+	overflow: hidden; 
+	background-image: url(img/header_image.jpg);
+	background-position: center;
+	background-size: cover;
+}
+  
+.header__h1 {
+    font-size: 77px;
+    font-weight: normal;
+	font-family: 'dancing-script-ot';
+    color: white;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 15%;
+ 
+}
+
+.header__h2 {
+    font-size: 32px;
+    font-weight: normal;
+    font-family: "Roboto";
+    color: white;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 40%;
+ 
+}
+
+.header__button {
+    border: none;
+    font-size: 24px;
+    color: white;
+    background-color: #003333;
+    position: absolute;
+    text-align: center;
+    top: 70%;
+    left: 50%;
+    margin-left: -115px;
+    padding: 13px 18px;
+}
+/****************************************/
+/* menu header */
+/****************************************/
+.header__nav {
+    display: flex;
+	justify-content: flex-end;
+}
+.nav {
+	padding: 35px 68px; 
+ }
+ 
+.nav__item {
+    text-decoration: none;
+    color: #3a4246;
+    margin-left: 35px;
+    transition: 0.5s;
+    padding-bottom: 30px;
+    border-bottom: 1px solid transparent; 
+	}
+	
+.nav__item--home{
+		color: white;
+}
+/***************************************************************/
+/* content */
+/**************************************************************/
+.content{
+	display: block;
+}
+.content__h2 {
+	text-align: center;
+	font-size: 32px;
+	margin: 70px 0 35px;
+	font-family: "Roboto";
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden; 
+}
+
+.content__p {
+	font-size: 19px;
+	line-height: 28px;
+	text-align: center;
+	max-width: 650px;
+	margin: 0 auto 70px; 
+}
+/**************************************************************/
+/*inside*/
+/*************************************************************/
+.inside{
+	display: flex;
+   	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 826px;
+}
+.cell{
+	flex: 0 0 33%;
+	font-family: "Roboto";
+	text-align: center;
+	margin-top: -5px;
+}
+
+.cell-info__h3 {
+    position: relative; 
+}
+.cell-info__p {
+    max-height: 38px;
+    overflow: hidden; 
+}
+/**********************************************************/
+/* indicator*/
+/**********************************************************/
+
+.indicator {
+	
+	margin: 220px;
+	left: 100%;
+	padding-left: 31%;
+	
+}
+.indicator__label {
+    display: block;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    border: 2px solid #3a4246;
+    float: left;
+    margin-left: 20px;
+    cursor: pointer; 
+}
+.indicator__label--first {
+	background-color: #3a4246; }
+/****************************************************************/
+/* slide*/
+/****************************************************************/
+.item-slide {
+	position: absolute;
+	min-height: 200px;
+	overflow: hidden;
+	text-align: center;
+	width: 100%;
+	padding: 20px;
+}
+  
+.item-slide__img {
+    border-radius: 50%;
+    width: 64px; 
+}
+.item-slide__h3 {
+    font-weight: normal;
+    width: 70%;
+    margin: 25px auto 20px; 
+}
+.item-slide__span {
+    font-style: italic;
+    color: #1599a7;
+    font-family: "Roboto"; 
+}
+/***********************************************************************/
+/*footer*/
+/***********************************************************************/
+.footer {
+	color: white;
+	min-height: 145px;
+	position: relative;
+	background-image: url(img/footer_image.png);
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+	text-align: center; 
+	margin-top: 250px
+}
+.footer__p {
+    padding: 45px 0 22px;
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Roboto"; 
+}
+.nav__item-footer {
+  color: white;
+  text-decoration: none;
+  font-size: 19px;
+  font-family: "Roboto";
+  margin: 0 28px 0 0;
+  padding: 5px 0 20px 0;
+  border-bottom: 1px solid transparent; 
+}
