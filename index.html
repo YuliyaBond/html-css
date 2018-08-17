@@ -78,9 +78,12 @@
 				</div>
 			</div>
 			<div class="indicator">
-				<input type="radio" class="indicator__button" onclick="_click(1); return false;">
-                <input type="radio" class="indicator__button" onclick="_click(2); return false;">
-                <input type="radio" class="indicator__button" onclick="_click(3); return false;">
+				<input type="radio" class="indicator__button" id="button1" onclick="_click(1); return false;">
+				<label class="indicator__label indicator__label--first" for="button1"></label>
+                <input type="radio" class="indicator__button" id="button2" onclick="_click(2); return false;">
+                <label class="indicator__label indicator__label--second" for="button2"></label>
+                <input type="radio" class="indicator__button" id="button3" onclick="_click(3); return false;">
+                <label class="indicator__label indicator__label--third" for="button3"></label>
 			</div>
 		</div>
 		<div class="footer">

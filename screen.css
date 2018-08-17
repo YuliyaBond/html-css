@@ -151,8 +151,18 @@ h1 {
     display: block;
 }
 
-	
+input[type="radio"]{display: none;}
 
+.indicator__label{
+	height: 7px;
+    width: 7px;	
+	border: 2px solid #3a4246;
+	border-radius: 50%;
+	margin-left: 20px;
+}
+input[type="radio"]:checked+label{
+    border: black solid 2px;
+}
 /****************************************************************/
 /* slide*/
 /****************************************************************/
