@@ -143,36 +143,28 @@ h1 {
 /**********************************************************/
 
 .indicator {
-	
-	margin: 220px;
-	left: 100%;
-	padding-left: 31%;
+	display: flex;
+    justify-content: center;
 	
 }
-.indicator__label {
+.indicator__button {
     display: block;
-    height: 7px;
-    width: 7px;
-    border-radius: 50%;
-    border: 2px solid #3a4246;
-    float: left;
-    margin-left: 20px;
-    cursor: pointer; 
 }
-.indicator__label--first {
-	background-color: #3a4246; }
+
+	
+
 /****************************************************************/
 /* slide*/
 /****************************************************************/
 .item-slide {
-	position: absolute;
-	min-height: 200px;
+	height: 210px;
 	overflow: hidden;
 	text-align: center;
 	width: 100%;
 	padding: 20px;
+	box-sizing: border-box;
 }
-  
+
 .item-slide__img {
     border-radius: 50%;
     width: 64px; 
@@ -199,7 +191,7 @@ h1 {
 	background-size: cover;
 	overflow: hidden;
 	text-align: center; 
-	margin-top: 250px
+	margin-top: 20px
 }
 .footer__p {
     padding: 45px 0 22px;

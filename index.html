@@ -59,19 +59,30 @@
 					<p class="cell-info__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
 		</div>
-		
-		<div class="item-slide">
-            <img src="img/portrait.png" class="item-slide__img">
-            <h3 class="item-slide__h3"> “Etiam fermentum risus quis lorem maximus suscipit. Mauris a eros porttitor, luctus risus sollicitudin, dictum nunc. Maecenas ornare molestie rutrum.”</h3>
-            <span class="item-slide__span"><strong>- Chang Susan</strong></span>
-        </div>
-
-		<div class="indicator">
-            <label class="indicator__label indicator__label--first"></label>
-            <label class="indicator__label" ></label>
-            <label class="indicator__label" ></label>
-        </div>
-		
+		<div class="slider">
+			<div class="slider__content">
+				<div style=" display:none" class="item-slide" id="item1">
+					<img src="img/portrait.png" class="item-slide__img">
+					<h3 class="item-slide__h3"> “Etiam fermentum risus quis lorem maximus suscipit. Mauris a eros porttitor, luctus risus sollicitudin, dictum nunc. Maecenas ornare molestie rutrum.”</h3>
+					<span class="item-slide__span"><strong>- Chang Susan</strong></span>
+				</div>
+				<div style=" display:none" class="item-slide" id="item2">
+					<img src="img/portrait.png" class="item-slide__img">
+					<h3 class="item-slide__h3"> “second”</h3>
+					<span class="item-slide__span"><strong>- Chang Susan</strong></span>
+				</div>
+				<div style=" display:none" class="item-slide" id="item3">
+					<img src="img/portrait.png" class="item-slide__img">
+					<h3 class="item-slide__h3"> “3”</h3>
+					<span class="item-slide__span"><strong>- Chang Susan</strong></span>
+				</div>
+			</div>
+			<div class="indicator">
+				<input type="radio" class="indicator__button" onclick="_click(1); return false;">
+                <input type="radio" class="indicator__button" onclick="_click(2); return false;">
+                <input type="radio" class="indicator__button" onclick="_click(3); return false;">
+			</div>
+		</div>
 		<div class="footer">
 			<p class="footer__p">Morbi nec ipsum scelerisque, lobortis leo at, euismod velit.</p>
 			<nav class="footer__nav">
@@ -81,5 +92,6 @@
             </nav>
 		</div> 
 	</div>	
+	<script src="common.js"></script>
       </body>
       </html>
