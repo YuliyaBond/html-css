@@ -166,13 +166,18 @@ input[type="radio"]:checked+label{
 /****************************************************************/
 /* slide*/
 /****************************************************************/
+.slider__content{
+	position: relative;
+    height: 210px;
+    list-style-type: none;
+	margin-top: 20px;
+}
 .item-slide {
-	height: 210px;
-	overflow: hidden;
-	text-align: center;
-	width: 100%;
-	padding: 20px;
-	box-sizing: border-box;
+	position: absolute;
+    width: 100%;
+    opacity: 0;
+    z-index: 1;
+    box-sizing: border-box;
 }
 
 .item-slide__img {
@@ -188,6 +193,10 @@ input[type="radio"]:checked+label{
     font-style: italic;
     color: #1599a7;
     font-family: "Roboto"; 
+}
+.showing {
+    opacity: 1;
+    z-index: 2;
 }
 /***********************************************************************/
 /*footer*/
