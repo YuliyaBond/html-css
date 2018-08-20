@@ -12,8 +12,7 @@ var toggle = function(){
 	var divs = document.querySelectorAll("input.indicator__button");
     var handler = function() {
         var index = this.getAttribute('data-index');
-        alert(index);
-			nextSlide(index);
+		nextSlide(index);
     }
     for (var i = 0; i < divs.length; i++) {
         divs[i].setAttribute('data-index', i);
