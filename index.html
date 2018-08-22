@@ -7,13 +7,20 @@
 </head>
 <body>
    <div class="wrapper">
-      <!-- header section -->
+	
       <div class="header">
-			<nav class="header__nav nav">
-				<a href="#" class="nav__item nav__item--home">Home</a>
-				<a href="#" class="nav__item">Destinations</a>
-				<a href="#" class="nav__item">Travellers' Info</a>
-				<a href="#" class="nav__item">Day Tours</a>
+	  <div id="toggler">
+		<div class = "ham"></div>
+		<div class = "ham"></div>
+		<div class = "ham"></div>
+	  </div>
+			<nav id="box" class="header__nav nav menu--show">
+				<ul>
+					<li> <a href="#" class="nav__item nav__item--home">Home</a></li>
+					<li> <a href="#" class="nav__item">Destinations</a></li>
+					<li> <a href="#" class="nav__item">Travellers' Info</a></li>
+					<li> <a href="#" class="nav__item">Day Tours</a></li>
+				</ul>
 			</nav>
 			<h1 class="header__h1">Favignana</h1>
 			<h2 class="header__h2">Welcome to Favignana. <br> 
@@ -26,34 +33,34 @@
                Nullam nunc purus, bibendum et tincidunt vel, luctus id sem.</p>
 			<div class="inside">   
 				<div class="cell">
-					<img src="img/cell_1.jpg">
+					<img class="cell__img" src="img/cell_1.jpg">
 				</div>
-				<div class="cell">
+				<div class="cell cell--padding">
 					<img src="img/food.jpg">
 					<h3 class="cell-info__h3">Food and Cuisine</h3>
 					<p class="cell-info__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
 				<div class="cell">
-					<img src="img/cell_2.jpg">
+					<img class="cell__img" src="img/cell_2.jpg">
 				</div>
-				<div class="cell">
+				<div class="cell cell--padding">
 					<img src="img/culture.jpg">
 					<h3 class="cell-info__h3">Culture & Heritage</h3>
 					<p class="cell-info__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</div>
 				<div class="cell">
-					<img src="img/cell_3.jpg">
+					<img class="cell__img" src="img/cell_3.jpg">
 				</div>
 				<div class="cell">
-					<img src="img/cell_4.jpg">
+					<img class="cell__img" src="img/cell_4.jpg">
 				</div>
 				<div class="cell">
-					<img src="img/cell_5.jpg">
+					<img class="cell__img" src="img/cell_5.jpg">
 				</div>
 				<div class="cell">
-					<img src="img/cell_6.jpg">
+					<img class="cell__img" src="img/cell_6.jpg">
 				</div>
-				<div class="cell">
+				<div class="cell cell--padding">
 					<img src="img/flower.jpg">
 					<h3 class="cell-info__h3">Nature & Preserves</h3>
 					<p class="cell-info__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -78,20 +85,24 @@
 				</div>
 			</div>
 			<div class="indicator">
-				<input type="radio" class="indicator__button" id="button1" onclick="toggle();">
+				<input type="radio" name="slide" class="indicator__button" id="button1" onclick="toggle();">
 				<label class="indicator__label indicator__label--first" for="button1"></label>
-                <input type="radio" class="indicator__button" id="button2" onclick="toggle();">
+                <input type="radio" name="slide" class="indicator__button" id="button2" onclick="toggle();">
                 <label class="indicator__label indicator__label--second" for="button2"></label>
-                <input type="radio" class="indicator__button" id="button3" onclick="toggle();">
+                <input type="radio" name="slide" class="indicator__button" id="button3" onclick="toggle();">
                 <label class="indicator__label indicator__label--third" for="button3"></label>
 			</div>
 		</div>
 		<div class="footer">
 			<p class="footer__p">Morbi nec ipsum scelerisque, lobortis leo at, euismod velit.</p>
 			<nav class="footer__nav">
-                <a href="#" class="nav__item-footer">Destinations    /   </a>
-                <a href="#" class="nav__item-footer">Travellers’ Info   /  </a>
-                <a href="#" class="nav__item-footer">Day Tours</a>
+                <ul>
+					<li><a href="#" class="nav__item-footer">Destinations</a> </li>
+					<li class="nav__item-footer"> &frasl; </li>
+					<li><a href="#" class="nav__item-footer">Travellers’ Info</a></li>
+					<li class="nav__item-footer"> &frasl; </li>
+					<li><a href="#" class="nav__item-footer">Day Tours</a></li>
+				</ul>
             </nav>
 		</div> 
 	</div>	
