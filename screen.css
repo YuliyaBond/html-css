@@ -171,7 +171,6 @@ li {
    	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	width: 826px;
 	width: 100%;
 }
 .cell{
@@ -336,6 +335,10 @@ input[type="radio"]:checked+label{
 
 .nav{
 	padding: 0px 68px;
+}
+
+.inside{
+		width: 826px;
 }
 
 }
