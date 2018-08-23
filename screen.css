@@ -54,7 +54,11 @@ body {
     top: 40%;
  
 }
-
+li{
+		list-style-type: none;
+	display: inline;
+	padding-top: 20px;
+}
 .header__button {
     border: none;
     font-size: 24px;
@@ -88,11 +92,7 @@ body {
 	}
 	
 
-li {
-	list-style-type: none;
-	display: inline;
-	padding-top: 20px;
-}
+
 
 #toggler{
 	/*display: none;*/
@@ -171,7 +171,7 @@ li {
    	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
+	margin: 0 auto;	
 }
 .cell{
 	flex: 0 0 50%;
@@ -223,11 +223,14 @@ input[type="radio"]:checked+label{
 /****************************************************************/
 /* slide*/
 /****************************************************************/
+
+
 .slider__content{
 	position: relative;
     height: 210px;
     list-style-type: none;
 	margin-top: 20px;
+
 }
 .item-slide {
 	position: absolute;
@@ -235,7 +238,9 @@ input[type="radio"]:checked+label{
     opacity: 0;
     z-index: 1;
     box-sizing: border-box;
+	text-align: center;
 }
+
 
 .item-slide__img {
     border-radius: 50%;
@@ -285,11 +290,18 @@ input[type="radio"]:checked+label{
   padding: 5px 0 20px 0;
   border-bottom: 1px solid transparent; 
 }
-.nav__item-footer:after{
-	content: "/";
-	padding-left: 25px;
+
+.footer__list--item{
+	list-style-type: none;
+	display: inline;
+	padding-top: 20px;
 }
-.ul:last-child{content: "";}
+
+.footer__list--item:after{
+	content: "/";
+	padding: 0px 25px;
+}
+.footer__list--item:last-child:after{content: none;}
 
 @media screen and (max-width: 768px) {
 .cell{
