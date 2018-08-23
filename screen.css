@@ -12,17 +12,10 @@ body {
   }
 
 
-header{
-  display: block; }
-
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
 @font-face {
-    font-family: dancing-script-ot; /* Гарнитура шрифта */
-    src: url(fonts/dancing-script-ot.ttf); /* Путь к файлу со шрифтом */
-   } 
+    font-family: dancing-script-ot; 
+    src: url(fonts/dancing-script-ot.ttf); 
+} 
   
   
 /************************************************/  
@@ -38,7 +31,7 @@ h1 {
 	background-size: cover;
 }
   
-.header__h1 {
+.header__caption {
     font-size: 77px;
     font-weight: normal;
 	font-family: 'dancing-script-ot';
@@ -50,7 +43,7 @@ h1 {
  
 }
 
-.header__h2 {
+.header__subtitle {
     font-size: 32px;
     font-weight: normal;
     font-family: "Roboto";
@@ -86,23 +79,65 @@ h1 {
  
 .nav__item {
     text-decoration: none;
-    color: #3a4246;
+    
+	color: white;
     margin-left: 35px;
     transition: 0.5s;
     padding-bottom: 30px;
     border-bottom: 1px solid transparent; 
 	}
 	
-.nav__item--home{
-		color: white;
-}
 
 li {
 	list-style-type: none;
 	display: inline;
+	padding-top: 20px;
 }
+
 #toggler{
+	/*display: none;*/
+	display: flex;
+    cursor: pointer;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 5px;
+	z-index: 1;
+}
+.change .ham__rotate1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .ham__rotate2 {
+	opacity: 0;
+}
+
+.change .ham__rotate3{
+    transform: rotate(45deg) translate(-19px, -14px);
+}
+
+.ham{
+	width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.menu--show{
 	display: none;
+	position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+	top: 0;
+    bottom: 0;
+	align-items: center;
+    justify-content: center;
+}
+
+.menu{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /***************************************************************/
@@ -111,7 +146,7 @@ li {
 .content{
 	display: block;
 }
-.content__h2 {
+.content__caption {
 	text-align: center;
 	font-size: 32px;
 	margin: 70px 0 35px;
@@ -121,7 +156,7 @@ li {
 	overflow: hidden; 
 }
 
-.content__p {
+.content__discription {
 	font-size: 19px;
 	line-height: 28px;
 	text-align: center;
@@ -137,9 +172,11 @@ li {
 	justify-content: center;
 	align-items: center;
 	width: 826px;
+	width: 100%;
 }
 .cell{
-	flex: 0 0 33%;
+	flex: 0 0 50%;
+	align-items: center;
 	font-family: "Roboto";
 	text-align: center;
 	margin-top: -5px;
@@ -151,6 +188,10 @@ li {
 .cell-info__p {
     max-height: 38px;
     overflow: hidden; 
+}
+
+.cell__img{
+	width: 100%;
 }
 /**********************************************************/
 /* indicator*/
@@ -252,79 +293,49 @@ input[type="radio"]:checked+label{
 	content: "/";
 	padding-left: 25px;
 }
+.ul:last-child{content: "";}
 
 @media screen and (max-width: 768px) {
 .cell{
 	flex: 0 0 100%;
 	align-items: center;
 }
-.cell__img{
-	width: 100%;
+
 }
-.inside{
-	width: 100%;
+
+@media screen and (min-width: 1024px) {
+.cell{
+	flex: 0 0 33%;
+	align-items: center;
 }
+
+.nav__item{
+	color: #3a4246;
+}
+
+.nav__item--home{
+		color: white;
+}
+
 #toggler{
-	display: flex;
-    cursor: pointer;
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-right: 5px;
-	z-index: 1;
-}
-
-.change .ham__rotate1 {
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .ham__rotate2 {
-	opacity: 0;
-}
-
-.change .ham__rotate3{
-    transform: rotate(45deg) translate(-19px, -14px);
-}
-
-
-.ham{
-	width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
+	display: none;
 }
 
 .menu--show{
-	display: none;
-	position: fixed;
-    background: rgba(0, 0, 0, 0.5);
-	top: 0;
-    bottom: 0;
-	align-items: center;
-    justify-content: center;
-}
-.nav__item{
-	color: white;
-
-}
-ul{
 	display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	position: relative;
+    background: none;
+	top: 0px;
+    bottom: 0px;
+	align-items: none;
+    justify-content: flex-end;
 }
+.menu{
+	flex-direction: row;
 }
 
-@media screen and (max-width: 1024px) {
-.cell{
-	flex: 0 0 50%;
-	align-items: center;
-}
-.cell__img{
-	width: 100%;
-}
-.inside{
-	width: 100%;
+.nav{
+	padding: 0px 68px;
 }
 
 }
