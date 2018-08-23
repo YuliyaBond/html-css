@@ -181,10 +181,7 @@ li {
 	margin-top: -5px;
 }
 
-.cell-info__h3 {
-    position: relative; 
-}
-.cell-info__p {
+.cell-info__caption {
     max-height: 38px;
     overflow: hidden; 
 }
@@ -244,7 +241,7 @@ input[type="radio"]:checked+label{
     border-radius: 50%;
     width: 64px; 
 }
-.item-slide__h3 {
+.item-slide__discription {
     font-weight: normal;
     width: 70%;
     margin: 25px auto 20px; 
@@ -272,7 +269,7 @@ input[type="radio"]:checked+label{
 	text-align: center; 
 	margin-top: 20px
 }
-.footer__p {
+.footer__caption {
     padding: 30px 0 15px;
     margin: 0;
     text-align: center;
