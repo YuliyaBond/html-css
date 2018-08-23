@@ -30,9 +30,15 @@ function openbox(id, toggler) {
     var div = document.getElementById(id);
     if(div.style.display == 'flex') {
         div.style.display = 'none';
+		myFunction(toggler);
     }
     else {
         div.style.display = 'flex';
+		myFunction(toggler);
     }
+}
+
+function myFunction(x) {
+    x.classList.toggle("change");
 }
  

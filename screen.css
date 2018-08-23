@@ -251,7 +251,7 @@ input[type="radio"]:checked+label{
 
 @media screen and (max-width: 768px) {
 .cell{
-	flex: 0 0 50%;
+	flex: 0 0 100%;
 	align-items: center;
 }
 .cell__img{
@@ -267,7 +267,21 @@ input[type="radio"]:checked+label{
     flex-direction: column;
     align-items: flex-end;
     padding-right: 5px;
+	z-index: 1;
 }
+
+.change .ham__rotate1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .ham__rotate2 {
+	opacity: 0;
+}
+
+.change .ham__rotate3{
+    transform: rotate(45deg) translate(-19px, -14px);
+}
+
 
 .ham{
 	width: 35px;
@@ -278,19 +292,28 @@ input[type="radio"]:checked+label{
 
 .menu--show{
 	display: none;
-	position: absolute;
-    flex-direction: column;
+	position: fixed;
     background: rgba(0, 0, 0, 0.5);
+	top: 0;
+    bottom: 0;
+	align-items: center;
+    justify-content: center;
 }
 .nav__item{
 	color: white;
 
 }
+ul{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1024px) {
 .cell{
-	flex: 0 0 100%;
+	flex: 0 0 50%;
 	align-items: center;
 }
 .cell__img{
@@ -299,7 +322,5 @@ input[type="radio"]:checked+label{
 .inside{
 	width: 100%;
 }
-.cell--padding{
-	padding: 70px;
-}
+
 }
